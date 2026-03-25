@@ -3,7 +3,7 @@
 
     <h2>{{category}}</h2>
     <!--Link to CSS file-->
-    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <div class="gallery">
