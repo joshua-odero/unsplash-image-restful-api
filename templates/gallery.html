@@ -1,0 +1,14 @@
+<head>
+    <title>Categories</title>
+
+    <h2>{{category}}</h2>
+    <!--Link to CSS file-->
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div class="gallery">
+        {% for photo in photos%}
+            <img src="{{photo.urls.small}}" alt="image">
+        {% endfor %}
+    </div>
+</body>
